@@ -1,0 +1,186 @@
+{
+	"Database.MariaDB": {
+		"inputs": [
+			{
+				"mutuallyExclusiveGroup": [
+					[
+						{
+							"name": "ConnectString",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "连接字符串"
+						}
+					],
+					[
+						{
+							"name": "Server",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "服务器名称"
+						},
+						{
+							"name": "DatabaseName",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "数据库名称"
+						},
+						{
+							"name": "Username",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "用户名"
+						},
+						{
+							"name": "Password",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "密码"
+						}
+					],
+					[
+						{
+							"name": "Server",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "服务器名称"
+						},
+						{
+							"name": "Port",
+							"kind": "required",
+							"type": [
+								"scalar",
+								"real"
+							],
+							"purpose": "端口号"
+						},
+						{
+							"name": "DatabaseName",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "数据库名称"
+						},
+						{
+							"name": "Username",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "用户名"
+						},
+						{
+							"name": "Password",
+							"kind": "required",
+							"type": [
+								[
+									"string",
+									"scalar"
+								],
+								[
+									"char",
+									"row"
+								]
+							],
+							"purpose": "密码"
+						}
+					]
+				]
+			}
+		]
+	},
+	"Database.ResultSetToTable": {
+		"inputs": [
+			{
+				"name": "ResultSet",
+				"kind": "required",
+				"type": [
+					"scalar",
+					"java.sql.ResultSet"
+				],
+				"purpose": "SQL查询结果"
+			},
+			{
+				"name": "ColumnsOfInterest",
+				"kind": "ordered",
+				"type": [
+					[
+						"string"
+					],
+					[
+						"cell"
+					]
+				],
+				"purpose": "要转换的列名"
+			}
+		]
+	}
+}
