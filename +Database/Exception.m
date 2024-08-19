@@ -6,5 +6,6 @@ classdef Exception<MATLAB.Lang.IEnumerableException
 		Table_not_found_or_primary_key_missing
 		Datetime_TimeZone_not_set
 		Unsupported_VariableType
+		Dataset_cannot_addprop
 	end
 end

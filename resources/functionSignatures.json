@@ -182,5 +182,39 @@
 				"purpose": "要转换的列名"
 			}
 		]
+	},
+	"Database.UpdateByPrimary": {
+		"inputs": [
+			{
+				"name": "Connection",
+				"kind": "required",
+				"type": [
+					"scalar",
+					"java.sql.Connection"
+				],
+				"purpose": "数据库连接对象"
+			},
+			{
+				"name": "TableName",
+				"kind": "required",
+				"type": [
+					[
+						"string",
+						"scalar"
+					],
+					[
+						"char",
+						"row"
+					]
+				],
+				"purpose": "要更新的表名"
+			},
+			{
+				"name": "UpdateTable",
+				"kind": "required",
+				"type": "table",
+				"purpose": "要更新的数据表"
+			}
+		]
 	}
 }
